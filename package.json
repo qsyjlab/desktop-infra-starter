@@ -1,0 +1,24 @@
+{
+  "name": "desktop-infra-starter-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for desktop infra starter (client, api-service, docs)",
+  "scripts": {
+    "dev:client": "pnpm --parallel --filter @desktop-infra/api-service --filter @desktop-infra/client dev",
+    "dev:client-only": "pnpm --filter @desktop-infra/client dev",
+    "dev:api": "pnpm --filter @desktop-infra/api-service dev",
+    "dev:docs": "pnpm --filter @desktop-infra/docs docs:dev",
+    "build:client": "pnpm --filter @desktop-infra/client build",
+    "build:api": "pnpm --filter @desktop-infra/api-service build",
+    "build:docs": "pnpm --filter @desktop-infra/docs docs:build",
+    "db:download": "pnpm --filter @desktop-infra/client exec tsx ../scripts/download-mysql.ts",
+    "test": "echo \"No root tests\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2",
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  }
+}

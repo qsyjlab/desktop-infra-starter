@@ -1,0 +1,116 @@
+:root {
+  --bg: #f5f7fa;
+  --panel: #ffffff;
+  --line: #d9dfe8;
+  --ink-strong: #1f2329;
+  --ink-soft: #4e5969;
+  --brand: #1677ff;
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink-strong);
+}
+
+.audit-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topbar {
+  height: 64px;
+  border-bottom: 1px solid #e5e9f0;
+  background: var(--panel);
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--brand);
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.brand-subtitle {
+  margin: 2px 0 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.main-shell {
+  height: calc(100% - 64px);
+}
+
+.sidebar {
+  border-right: 1px solid #e5e9f0;
+  background: var(--panel);
+  padding: 16px 12px;
+}
+
+.menu-title {
+  margin: 0 8px 10px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.menu {
+  border-right: 0;
+  --el-menu-item-height: 40px;
+  --el-menu-sub-item-height: 40px;
+}
+
+.menu :deep(.el-menu-item) {
+  border-radius: 10px;
+  margin-bottom: 6px;
+  min-height: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.workspace {
+  padding: 20px;
+  overflow: auto;
+}
+
+.workspace-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.workspace-header p {
+  margin: 6px 0 16px;
+  color: var(--ink-soft);
+}
+
+.page-card {
+  border: 1px solid #e5e9f0;
+}

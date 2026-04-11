@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# Build outputs (generic)
+dist/
+build/
+out/
+release/
+
+# Workspace package outputs
+client/dist/
+client/dist-electron/
+client/release/
+client/resources/mysql/mac-arm64/
+client/resources/mysql/win-x64/
+client/.vite/
+client/resources/mysql/downloads/
+
+api-serivce/dist/
+api-serivce/.tsbuildinfo
+api-serivce/.deploy/
+api-serivce/.runtime/
+api-serivce/.pack/
+api-serivce/bundle/
+
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# .NET artifacts (net-client)
+net-client/**/bin/
+net-client/**/obj/
+net-client/.vs/
+
+client/dist-electron/
+client/release/

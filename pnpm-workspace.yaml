@@ -1,0 +1,8 @@
+packages:
+  - "client"
+  - "api-serivce"
+  - "docs"
+
+onlyBuiltDependencies:
+  - electron
+  - esbuild
