@@ -1,8 +1,10 @@
 packages:
-  - "client"
-  - "api-serivce"
-  - "docs"
+  - client
+  - api-serivce
+  - docs
 
 onlyBuiltDependencies:
+  - '@nestjs/core'
+  - '@scarf/scarf'
   - electron
   - esbuild
